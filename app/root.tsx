@@ -1,4 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import {
   json,
   type LinksFunction,
@@ -17,9 +16,10 @@ import {
 import { useTranslation } from "react-i18next";
 
 import i18next from "~/i18next.server";
+import stylesheet from "~/tailwind.css";
 
 export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel: "stylesheet", href: stylesheet },
 ];
 
 export const meta: MetaFunction = ({ data }) => {

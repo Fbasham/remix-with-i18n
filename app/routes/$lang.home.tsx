@@ -7,10 +7,10 @@ export default function Index() {
   const { t } = useTranslation();
 
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div>
       <p>{t("greeting")}</p>
       <a href={`/${data.locale === "fr" ? "en" : "fr"}/home`}>
-        {data.locale === "fr" ? "en" : "en"}
+        {data.locale === "fr" ? "en" : "fr"}
       </a>
     </div>
   );

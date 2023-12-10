@@ -9,8 +9,14 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Splash</h1>
+    <div className="bg-slate-900 text-white h-full min-h-[100dvh] grid place-content-center">
+      <div className="bg-white text-black py-10 px-20">
+        <h1>Splash</h1>
+        <div className="flex gap-2">
+          <a href="/en/home">en</a>
+          <a href="/fr/home">fr</a>
+        </div>
+      </div>
     </div>
   );
 }
